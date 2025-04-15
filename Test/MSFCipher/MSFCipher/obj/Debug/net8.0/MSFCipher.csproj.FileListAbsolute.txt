@@ -1,0 +1,11 @@
+E:\study\projects\MSFCipher\MSFCipher\MSFCipher\bin\Debug\net8.0\MSFCipher.deps.json
+E:\study\projects\MSFCipher\MSFCipher\MSFCipher\bin\Debug\net8.0\MSFCipher.dll
+E:\study\projects\MSFCipher\MSFCipher\MSFCipher\bin\Debug\net8.0\MSFCipher.pdb
+E:\study\projects\MSFCipher\MSFCipher\MSFCipher\obj\Debug\net8.0\MSFCipher.GeneratedMSBuildEditorConfig.editorconfig
+E:\study\projects\MSFCipher\MSFCipher\MSFCipher\obj\Debug\net8.0\MSFCipher.AssemblyInfoInputs.cache
+E:\study\projects\MSFCipher\MSFCipher\MSFCipher\obj\Debug\net8.0\MSFCipher.AssemblyInfo.cs
+E:\study\projects\MSFCipher\MSFCipher\MSFCipher\obj\Debug\net8.0\MSFCipher.csproj.CoreCompileInputs.cache
+E:\study\projects\MSFCipher\MSFCipher\MSFCipher\obj\Debug\net8.0\MSFCipher.dll
+E:\study\projects\MSFCipher\MSFCipher\MSFCipher\obj\Debug\net8.0\refint\MSFCipher.dll
+E:\study\projects\MSFCipher\MSFCipher\MSFCipher\obj\Debug\net8.0\MSFCipher.pdb
+E:\study\projects\MSFCipher\MSFCipher\MSFCipher\obj\Debug\net8.0\ref\MSFCipher.dll
