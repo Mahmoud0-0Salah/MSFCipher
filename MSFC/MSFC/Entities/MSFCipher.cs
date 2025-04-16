@@ -11,7 +11,7 @@ namespace MSFC.Entities
 	{
 		public MSFCipher() { }
 
-		public CaesarCipher GetCaesarCipher(int key)
+		public ICipher GetCaesarCipher(int key)
 		{
 			return new CaesarCipher(key);
 		}

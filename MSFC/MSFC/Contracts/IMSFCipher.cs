@@ -9,7 +9,7 @@ namespace MSFC.Contracts
 {
 	public interface IMSFCipher
 	{
-		public CaesarCipher GetCaesarCipher(int key);
+		public ICipher GetCaesarCipher(int key);
  
 	}
 }

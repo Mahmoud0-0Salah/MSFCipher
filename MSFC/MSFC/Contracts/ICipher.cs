@@ -17,11 +17,9 @@ namespace MSFC.Contracts
 		/// <returns>The encrypted ciphertext.</returns>
 		/// 
 	
-		/// <exception cref="ArgumentNullException">Thrown when plaintext or key is null.</exception>
+		/// <exception cref="ArgumentNullException">Thrown when plaintext is null.</exception>
 		/// 
 		
-		/// <exception cref="ArgumentException">Thrown when the key is invalid.</exception>
-		/// 
 		string Encrypt(string plaintext);
 
 		/// <summary>
@@ -36,11 +34,8 @@ namespace MSFC.Contracts
 		/// <returns>The decrypted plaintext.</returns>
 		/// 
 
-		/// <exception cref="ArgumentNullException">Thrown when ciphertext or key is null.</exception>
+		/// <exception cref="ArgumentNullException">Thrown when ciphertext is null.</exception>
 		/// 
-
-		/// <exception cref="ArgumentException">Thrown when the key is invalid.</exception>
-		///		
 
 		string Decrypt(string ciphertext);
 

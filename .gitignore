@@ -1,5 +1,8 @@
 MSFC/.vs/
+MSFC/MSFC/bin/
+MSFC/MSFC/obj/
 
 Test/ConsoleApp1/.vs/
 Test/ConsoleApp1/ConsoleApp1/bin/
 Test/ConsoleApp1/ConsoleApp1/obj/
+
