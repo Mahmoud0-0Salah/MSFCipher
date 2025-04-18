@@ -10,8 +10,8 @@ MSFCipher is a C# library that provides implementations of various classical and
 - 🔐 Ciphers:
   - Caesar Cipher
   - Monoalphabetic Cipher
-  - Vigenère Cipher
-  - Vernam Cipher (One-Time Pad)
+  - Vernam Cipher
+  - One-Time Pad
   - Rail Fence Cipher
   - Row-Column Transposition Cipher
 
@@ -83,18 +83,6 @@ Console.WriteLine($"Encrypted Message: {encryptedMessage}");
 string decryptedMessage = cipher.Decrypt(encryptedMessage);
 Console.WriteLine($"Decrypted Message: {decryptedMessage}");
 ```
-- ✅ Vigenère Cipher
-```csharp
-MSFCipher MSF = new MSFCipher();
-
-ICipher cipher = MSF.GetVigenereCipher("KEY");
-string message = "Hello, World!";
-string encryptedMessage = cipher.Encrypt(message);
-Console.WriteLine($"Encrypted Message: {encryptedMessage}");
-
-string decryptedMessage = cipher.Decrypt(encryptedMessage);
-Console.WriteLine($"Decrypted Message: {decryptedMessage}");
-```
 
 - ✅ Row-Column Transposition Cipher
 ```csharp
@@ -132,7 +120,6 @@ MSFC/
 ├── Entities/
 │   ├── CaesarCipher.cs
 │   ├── MonoalphabeticCipher.cs
-│   ├── VigenereCipher.cs
 │   ├── VernamCipher.cs
 │   ├── OneTimePadCipher.cs
 │   ├── RailFenceCipher.cs
