@@ -16,5 +16,9 @@ namespace MSFC.Entities
 			return new CaesarCipher(key);
 		}
 
+		public ICipher GetVernamCipher(string key)
+		{
+			return new VernamCipher(key);
+		}
 	}
 }

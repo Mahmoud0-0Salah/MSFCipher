@@ -10,6 +10,7 @@ namespace MSFC.Contracts
 	public interface IMSFCipher
 	{
 		public ICipher GetCaesarCipher(int key);
- 
+		public ICipher GetVernamCipher(string key);
+
 	}
 }

@@ -8,10 +8,9 @@ namespace ConsoleApp1
 	{
 		static void Main(string[] args)
 		{
-			// Create a new instance of the MSFCipher class
 			IMSFCipher MSF = new MSFCipher();
 
-			ICipher cipher = new MSFCipher().GetCaesarCipher(3);
+			ICipher cipher = MSF.GetCaesarCipher(3);
 			Console.WriteLine($"--------------------------Caesar--------------------------");
 			// Encrypt a message
 			string message = "Hello, World!";
@@ -21,7 +20,18 @@ namespace ConsoleApp1
 			// Decrypt the message
 			string decryptedMessage = cipher.Decrypt(encryptedMessage);
 			Console.WriteLine($"Decrypted Message: {decryptedMessage}");
-			Console.WriteLine($"----------------------------------------------------------");
+			Console.WriteLine($"----------------------------------------------------------\n");
+
+			Console.WriteLine($"--------------------------Vernam--------------------------");
+			cipher = MSF.GetVernamCipher("TestTestTestT");
+			// Encrypt a message
+			encryptedMessage = cipher.Encrypt(message);
+			Console.WriteLine($"Encrypted Message: {encryptedMessage}");
+
+			// Decrypt the message
+			decryptedMessage = cipher.Decrypt(encryptedMessage);
+			Console.WriteLine($"Decrypted Message: {decryptedMessage}");
+			Console.WriteLine($"----------------------------------------------------------\n");
 		}
 	}
 }
