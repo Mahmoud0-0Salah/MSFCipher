@@ -26,6 +26,11 @@ namespace MSFC.Entities
 			return new OneTimePadCipher();
 		}
 
+		public ICipher GetRailFenceCipher(int key)
+		{
+			return new RailFenceCipher(key);
+		}
+
 		public ICipher GetRowColumnTranspositionCipher(int key)
 		{
 			return new RowColumnTranspositionCipher(key);

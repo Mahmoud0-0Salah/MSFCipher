@@ -11,7 +11,7 @@ namespace ConsoleApp1
 			IMSFCipher MSF = new MSFCipher();
 
 			ICipher cipher = MSF.GetCaesarCipher(3);
-			Console.WriteLine($"--------------------------Caesar--------------------------");
+			Console.WriteLine($"					( Caesar )");
 			// Encrypt a message
 			string message = "Hello, World!";
 			string encryptedMessage = cipher.Encrypt(message);
@@ -22,7 +22,7 @@ namespace ConsoleApp1
 			Console.WriteLine($"Decrypted Message: {decryptedMessage}");
 			Console.WriteLine($"----------------------------------------------------------\n");
 
-			Console.WriteLine($"--------------------------Vernam--------------------------");
+			Console.WriteLine($"					( Vernam )");
 			cipher = MSF.GetVernamCipher("TestTestTestT");
 			// Encrypt a message
 			encryptedMessage = cipher.Encrypt(message);
@@ -34,7 +34,7 @@ namespace ConsoleApp1
 			Console.WriteLine($"----------------------------------------------------------\n");
 
 
-			Console.WriteLine($"--------------------------OneTimePad--------------------------");
+			Console.WriteLine($"					( OneTimePad )");
 			cipher = MSF.GetOneTimePadCipher();
 			// Encrypt a message
 			encryptedMessage = cipher.Encrypt(message);
@@ -45,7 +45,7 @@ namespace ConsoleApp1
 			Console.WriteLine($"Decrypted Message: {decryptedMessage}");
 			Console.WriteLine($"----------------------------------------------------------\n");
 
-			Console.WriteLine($"--------------------------Monoalphabetic--------------------------");
+			Console.WriteLine($"					( Monoalphabetic )");
 			cipher = MSF.GetMonoalphabeticCipher("QWERTYUIOPASDFGHJKLZXCVBNM");
 			// Encrypt a message
 			encryptedMessage = cipher.Encrypt(message);
@@ -56,8 +56,19 @@ namespace ConsoleApp1
 			Console.WriteLine($"Decrypted Message: {decryptedMessage}");
 			Console.WriteLine($"----------------------------------------------------------\n");
 
-			Console.WriteLine($"--------------------------RowColumnTransposition--------------------------");
+			Console.WriteLine($"					( RowColumnTransposition )");
 			cipher = MSF.GetRowColumnTranspositionCipher(5);
+			// Encrypt a message
+			encryptedMessage = cipher.Encrypt(message);
+			Console.WriteLine($"Encrypted Message: {encryptedMessage}");
+
+			// Decrypt the message
+			decryptedMessage = cipher.Decrypt(encryptedMessage);
+			Console.WriteLine($"Decrypted Message: {decryptedMessage}");
+			Console.WriteLine($"----------------------------------------------------------\n");
+
+			Console.WriteLine($"					( RailFence )");
+			cipher = MSF.GetRailFenceCipher(3);
 			// Encrypt a message
 			encryptedMessage = cipher.Encrypt(message);
 			Console.WriteLine($"Encrypted Message: {encryptedMessage}");
