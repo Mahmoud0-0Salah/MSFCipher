@@ -8,9 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="MSFC">
-      <HintPath>..\..\..\MSFC\MSFC\bin\Debug\net8.0\MSFC.dll</HintPath>
-    </Reference>
+    <PackageReference Include="MSFC" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

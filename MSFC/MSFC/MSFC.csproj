@@ -4,6 +4,27 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>MSFCipher</Title>
+    <Authors>MSF</Authors>
+    <Company>MSF</Company>
+    <Description>MSFCipher is a C# library that provides implementations of various classical and modern encryption algorithms using a simple, pluggable interface. Designed for learning, experimenting, and integrating symmetric encryption methods into your own .NET projects.</Description>
+    <PackageProjectUrl>https://github.com/Mahmoud0-0Salah/MSFCipher</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Mahmoud0-0Salah/MSFCipher</RepositoryUrl>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageTags>encryption; cipher; cryptography;</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
