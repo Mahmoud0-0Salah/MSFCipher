@@ -16,9 +16,19 @@ namespace MSFC.Entities
 			return new CaesarCipher(key);
 		}
 
+		public ICipher GetMonoalphabeticCipher(string key)
+		{
+			return new MonoalphabeticCipher(key);
+		}
+
 		public ICipher GetOneTimePadCipher()
 		{
 			return new OneTimePadCipher();
+		}
+
+		public ICipher GetRowColumnTranspositionCipher(int key)
+		{
+			return new RowColumnTranspositionCipher(key);
 		}
 
 		public ICipher GetVernamCipher(string key)

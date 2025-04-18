@@ -44,6 +44,28 @@ namespace ConsoleApp1
 			decryptedMessage = cipher.Decrypt(encryptedMessage);
 			Console.WriteLine($"Decrypted Message: {decryptedMessage}");
 			Console.WriteLine($"----------------------------------------------------------\n");
+
+			Console.WriteLine($"--------------------------Monoalphabetic--------------------------");
+			cipher = MSF.GetMonoalphabeticCipher("QWERTYUIOPASDFGHJKLZXCVBNM");
+			// Encrypt a message
+			encryptedMessage = cipher.Encrypt(message);
+			Console.WriteLine($"Encrypted Message: {encryptedMessage}");
+
+			// Decrypt the message
+			decryptedMessage = cipher.Decrypt(encryptedMessage);
+			Console.WriteLine($"Decrypted Message: {decryptedMessage}");
+			Console.WriteLine($"----------------------------------------------------------\n");
+
+			Console.WriteLine($"--------------------------RowColumnTransposition--------------------------");
+			cipher = MSF.GetRowColumnTranspositionCipher(5);
+			// Encrypt a message
+			encryptedMessage = cipher.Encrypt(message);
+			Console.WriteLine($"Encrypted Message: {encryptedMessage}");
+
+			// Decrypt the message
+			decryptedMessage = cipher.Decrypt(encryptedMessage);
+			Console.WriteLine($"Decrypted Message: {decryptedMessage}");
+			Console.WriteLine($"----------------------------------------------------------\n");
 		}
 	}
 }

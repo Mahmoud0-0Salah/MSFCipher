@@ -12,6 +12,7 @@ namespace MSFC.Contracts
 		public ICipher GetCaesarCipher(int key);
 		public ICipher GetVernamCipher(string key);
 		public ICipher GetOneTimePadCipher();
-
+		public ICipher GetMonoalphabeticCipher(string key);
+		public ICipher GetRowColumnTranspositionCipher(int columns);
 	}
 }
