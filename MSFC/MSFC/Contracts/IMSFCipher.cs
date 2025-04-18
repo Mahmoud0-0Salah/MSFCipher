@@ -11,6 +11,7 @@ namespace MSFC.Contracts
 	{
 		public ICipher GetCaesarCipher(int key);
 		public ICipher GetVernamCipher(string key);
+		public ICipher GetOneTimePadCipher();
 
 	}
 }

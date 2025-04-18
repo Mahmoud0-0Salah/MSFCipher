@@ -32,6 +32,18 @@ namespace ConsoleApp1
 			decryptedMessage = cipher.Decrypt(encryptedMessage);
 			Console.WriteLine($"Decrypted Message: {decryptedMessage}");
 			Console.WriteLine($"----------------------------------------------------------\n");
+
+
+			Console.WriteLine($"--------------------------OneTimePad--------------------------");
+			cipher = MSF.GetOneTimePadCipher();
+			// Encrypt a message
+			encryptedMessage = cipher.Encrypt(message);
+			Console.WriteLine($"Encrypted Message: {encryptedMessage}");
+
+			// Decrypt the message
+			decryptedMessage = cipher.Decrypt(encryptedMessage);
+			Console.WriteLine($"Decrypted Message: {decryptedMessage}");
+			Console.WriteLine($"----------------------------------------------------------\n");
 		}
 	}
 }

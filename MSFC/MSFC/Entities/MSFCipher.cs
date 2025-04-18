@@ -16,6 +16,11 @@ namespace MSFC.Entities
 			return new CaesarCipher(key);
 		}
 
+		public ICipher GetOneTimePadCipher()
+		{
+			return new OneTimePadCipher();
+		}
+
 		public ICipher GetVernamCipher(string key)
 		{
 			return new VernamCipher(key);
