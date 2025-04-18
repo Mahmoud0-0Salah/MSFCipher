@@ -130,7 +130,7 @@ MSFC/
 - Pull requests are welcome! Feel free to fork this project, improve it, and submit a PR.
 
 ## 📜 License
-
+- This project is open-source and available under the MIT License.
 
 ## 🧪 Demo
 - You can quickly test each cipher by running Test/ConsoleApp1
