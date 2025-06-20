@@ -14,6 +14,12 @@
     <RepositoryUrl>https://github.com/Mahmoud0-0Salah/MSFCipher</RepositoryUrl>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageTags>encryption; cipher; cryptography;</PackageTags>
+	<Version>2.0.0</Version>
+	<PackageReleaseNotes>
+		- Vernam cipher updated: key and text no longer need to be the same length
+		- Internal handling now auto-aligns key length to text
+		- Backward-compatible with previous encryption methods
+	</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

@@ -23,7 +23,7 @@ namespace ConsoleApp1
 			Console.WriteLine($"----------------------------------------------------------\n");
 
 			Console.WriteLine($"					( Vernam )");
-			cipher = MSF.GetVernamCipher("TestTestTestT");
+			cipher = MSF.GetVernamCipher("TesttT");
 			// Encrypt a message
 			encryptedMessage = cipher.Encrypt(message);
 			Console.WriteLine($"Encrypted Message: {encryptedMessage}");

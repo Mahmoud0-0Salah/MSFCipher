@@ -9,7 +9,7 @@ namespace MSFC.Entities
 {
 	internal class VernamCipher : ICipher
 	{
-		private readonly string key;
+		private string key;
 
 		public VernamCipher(string key)
 		{
@@ -25,7 +25,7 @@ namespace MSFC.Entities
 				throw new ArgumentNullException(nameof(text), "Text cannot be null.");
 
 			if (text.Length != key.Length)
-				throw new ArgumentException("Text and key must be of the same length.");
+				this.key = MatchLengthWithDynamicPad(key,text, new char[] { 'A', 'B', 'C', 'D', 'E', '*', '#', '@','$','%', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' });
 
 			StringBuilder result = new StringBuilder();
 
@@ -42,5 +42,33 @@ namespace MSFC.Entities
 		{
 			return Encrypt(cipherText); // Encryption and decryption are the same in Vernam Cipher
 		}
+
+		private string MatchLengthWithDynamicPad(string input, string target, char[] padChars)
+		{
+			int targetLength = target.Length;
+			int inputLength = input.Length;
+
+			if (inputLength > targetLength)
+			{
+				return input.Substring(0, targetLength); 
+			}
+			else if (inputLength < targetLength)
+			{
+				int padCount = targetLength - inputLength;
+				var sb = new StringBuilder(input);
+
+				for (int i = 0; i < padCount; i++)
+				{
+					char padChar = padChars[i % padChars.Length]; 
+					sb.Append(padChar);
+				}
+
+				return sb.ToString();
+			}
+
+			return input; 
+		}
+
+
 	}
 }
